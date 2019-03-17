@@ -1,0 +1,36 @@
+html, body {
+    height: 100%;
+}
+.ui {
+    text-align: center;
+}
+
+.title {
+    font-family: 'Teko', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+#grid {
+    border: solid 1px black;
+    display: grid;
+    grid-template-columns: repeat(3, 150px [col-start]); /* repeat( '3 times', 'each cell is 50px' [col-start is just some necessary part of it]) */
+    grid-template-rows: repeat(3, 150px [row-start]);
+    grid-auto-rows: 50%;
+    margin-left: 725px;
+    margin-top: 100px;
+    width: 450px; /* Calculated the width based on width of each cell x the number of sells in the row */
+}
+.number {
+    font-family: 'Teko', sans-serif;
+    font-size: 25px;
+    border: solid 1px black;
+    margin-top: 0%; 
+    /* used to get rid of default top margin of each cell */
+    margin-bottom: 0%;
+    /* used to get rid of default bottom margin of each cell */
+    padding-top: 65px;
+    /* Moves the number down to the center of each cell from the top */
+}
+
+
