@@ -40,8 +40,8 @@ var operatorFunctions = function() {
 // Number Selection Function
 var numberSelect = function() {
     var number = this.getAttribute("value"); // This function pulls the html value="" attribute of each element. That number will be pushed into the constants array.
-    digits.push(parseInt(number)); // Adds individual digits to digits array
-    currentNumber.push(parseInt(digits.join('')));
+    digits.push(number); // Adds individual digits to digits array.
+    currentNumber.push(Number(digits.join('')));
     mainValue.textContent = currentNumber[currentNumber.length - 1];
 };
 for (var i = 0; i < numbers.length; i++) {
